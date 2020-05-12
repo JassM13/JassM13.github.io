@@ -1,0 +1,77 @@
+:root {
+	--background-color: #f6f6f6;
+    --links: #222222;
+    --keyword: #69b8e5;
+    --string: #313131;
+    --comment: #267507;
+}
+
+html, body { 
+    background-color: var(--background-color);
+    font-family: -apple-system-font, BlinkMacSystemFont, "Segoe UI", "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h1 { 
+    font-size: 2.5rem;
+}
+
+a {
+    color: var(--links);
+    text-decoration: none;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.links {
+    padding-top: 20px;
+    font-size: 30pt;
+}
+
+.links > a { 
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+.code { 
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+.comment { 
+    color: var(--comment);
+}
+
+.keyword {
+    color: var(--keyword);
+}
+
+.string { 
+    color: var(--string);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+        --background-color: #0b0b0b;
+        --links: #222222;
+	}
+}
